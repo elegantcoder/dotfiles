@@ -19,6 +19,12 @@ alias fk=findKeyword
 #gitignore
 function gi() { curl http://gitignore.io/api/$@ ;}
 
+# go
+function go() {
+    IFS=":"; declare -a Array=($*) 
+    vim +${Array[1]} ${Array[0]}
+}
+
 # programs
 alias st='open -a "Sublime Text 2"'
 alias stree='open -a "SourceTree"'

@@ -16,6 +16,9 @@ function findKeyword () {
 }
 alias fk=findKeyword
 
+#gitignore
+function gi() { curl http://gitignore.io/api/$@ ;}
+
 # programs
 alias st='open -a "Sublime Text 2"'
 alias stree='open -a "SourceTree"'
